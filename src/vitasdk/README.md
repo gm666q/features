@@ -1,15 +1,13 @@
 
-# Hello, World! (hello)
+# Vita SDK (vitasdk)
 
-A hello world feature
+Installs Vita SDK and needed dependencies.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/hello:1": {
-        "version": "latest"
-    }
+    "ghcr.io/gm666q/features/vitasdk:1": {}
 }
 ```
 
@@ -17,7 +15,7 @@ A hello world feature
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| greeting | Select a pre-made greeting, or enter your own | string | hey |
+| variant | Select a SDK variant to install | string | hardfp |
 
 
 

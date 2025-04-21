@@ -1,0 +1,24 @@
+{
+    "id": "vitasdk",
+    "version": "1.0.0",
+    "name": "Vita SDK",
+    "description": "Installs Vita SDK and needed dependencies.",
+    "options": {
+        "variant": {
+            "type": "string",
+            "enum": [
+                "hardfp",
+                "softfp"
+            ],
+            "default": "hardfp",
+            "description": "Select a SDK variant to install"
+        }
+    },
+    "containerEnv": {
+        "VITASDK": "/usr/local/vitasdk",
+        "PATH": "/usr/local/vitasdk/bin:${PATH}"
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
